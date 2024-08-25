@@ -11,10 +11,13 @@ import { useEffect, useState } from "react";
 import Loader from "./pages/Loader";
 import { AnimatePresence } from "framer-motion";
 import MainLayout from "./layouts/MainLayout";
+import Team from "./pages/Team";
+import About from "./pages/About";
+import Schedule from "./pages/Schedule";
+import Events from "./pages/Events";
 
 function App() {
   const [loading, setLoading] = useState(true);
-  const [state, setState] = useState("/");
 
   useEffect(() => {
     setTimeout(() => {
@@ -25,13 +28,45 @@ function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Home key='/' />,
+      element: <Home />,
     },
     {
       path: "/welcome",
       element: (
         <MainLayout>
-          <Details key='/welcome' />
+          <Details />
+        </MainLayout>
+      ),
+    },
+    {
+      path: "/team",
+      element: (
+        <MainLayout>
+          <Team />
+        </MainLayout>
+      ),
+    },
+    {
+      path: "/about",
+      element: (
+        <MainLayout>
+          <About />
+        </MainLayout>
+      ),
+    },
+    {
+      path: "/schedule",
+      element: (
+        <MainLayout>
+          <Schedule />
+        </MainLayout>
+      ),
+    },
+    {
+      path: "/events",
+      element: (
+        <MainLayout>
+          <Events />
         </MainLayout>
       ),
     },
@@ -41,19 +76,7 @@ function App() {
     },
   ]);
 
-  router.subscribe((routerState) => {
-    setState(routerState.location.pathname);
-  });
-
-  return (
-    <AnimatePresence initial={false} mode='wait'>
-      <RouterProvider
-        key={state}
-        className='select-none bg-black'
-        router={router}
-      />
-    </AnimatePresence>
-  );
+  return <RouterProvider className='select-none bg-black' router={router} />;
 }
 
 export default App;

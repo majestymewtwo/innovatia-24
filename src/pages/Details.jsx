@@ -8,16 +8,16 @@ import NavButton from "@/components/NavButton";
 
 const Details = () => {
   return (
-    <div className='z-10 flex flex-col space-y-5 items-center lg:py-10 w-full h-screen overflow-y-scroll'>
+    <div className='z-10 flex flex-col space-y-10 items-center lg:py-10 w-full h-screen overflow-y-scroll'>
       <div className='text-white text-center'>
-        <h3 className='text-sm lg:text-2xl lg:gap-2 flex flex-col lg:flex-row font-serif font-bold drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
+        <h3 className='text-3xl lg:text-4xl lg:gap-2 flex flex-col lg:flex-row font-beauty-mountain font-bold drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
           <span>Department of</span>
           <span>M.Tech Computer Science & Engineering</span>
         </h3>
         <p className='text-xs lg:text-sm drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
           in association with
         </p>
-        <h3 className='text-sm lg:text-2xl font-serif font-bold drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
+        <h3 className='text-3xl lg:text-4xl tracking-wider font-beauty-mountain font-bold drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
           Sai Infoblitz
         </h3>
         <p className='text-xs lg:text-sm drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
@@ -32,7 +32,7 @@ const Details = () => {
         <h1 className='font-sandy-toes-palm text-6xl lg:text-9xl'>0</h1>
       </Link>
       <CountdownTimer targetDate={"09-11-2024"} />
-      <div className='flex relative items-center gap-4'>
+      <div className='flex flex-col lg:flex-row relative items-center gap-4'>
         <NavButton path='/about' title='About' />
         <NavButton path='/events' title='Events' />
         <NavButton path='/schedule' title='Schedule' />
