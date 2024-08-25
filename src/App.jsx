@@ -43,6 +43,7 @@ function App() {
   return (
     <AnimatePresence initial={false} mode='wait'>
       <RouterProvider
+        key={state}
         className='select-none bg-black'
         router={router}
       />

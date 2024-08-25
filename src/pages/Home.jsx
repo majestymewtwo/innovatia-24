@@ -13,7 +13,6 @@ function Home() {
       className='bg-cyan-900 relative h-screen overflow-hidden'>
       <OceanScene />
       <Wheel />
-      <WavyFooter />
     </m.div>
   );
 }

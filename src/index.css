@@ -2,6 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "SandyToes";
+  src: url("/fonts/SandyToes/SandyToes-L3eLG.ttf");
+}
+@font-face {
+  font-family: "SandyToes-Palm";
+  src: url("/fonts/SandyToes/SandyToesPalm-VGlB6.ttf");
+}
+@font-face {
+  font-family: "SandyToes-StarFish";
+  src: url("/fonts/SandyToes/SandyToesStarFish-K74KZ.ttf");
+}
+@font-face {
+  font-family: "SandyToes-Umbrella";
+  src: url("/fonts/SandyToes/SandyToesUmbrella-2OmMl.ttf");
+}
+@font-face {
+  font-family: "SandyToes-Wave";
+  src: url("/fonts/SandyToes/SandyToesWave-2Om53.ttf");
+}
+@font-face {
+  font-family: "BeautyMountain";
+  src: url("/public/fonts/BeautyMountainsPersonalUse-od7z.ttf");
+}
+@font-face {
+  font-family: "LostFish";
+  src: url("/public/fonts/LostFish-5DOz.ttf");
+}
+
 ::-webkit-scrollbar {
   display: none;
 }

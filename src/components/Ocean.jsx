@@ -52,7 +52,10 @@ function Ocean() {
 }
 
 const CustomText = ({ children, ...props }) => {
-  const font = useLoader(FontLoader, "/fonts/Anton_Regular.json");
+  const font = useLoader(
+    FontLoader,
+    "/fonts/Sandy Toes Star Fish_Regular.json"
+  );
   const meshRef = useRef();
 
   useEffect(() => {

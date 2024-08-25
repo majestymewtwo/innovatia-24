@@ -21,7 +21,7 @@ const Wheel = () => {
       <button
         className={`${
           !rotate ? "hidden" : "absolute"
-        } top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-40 bg-[#CD9A30] text-6xl font-serif px-14 py-4 rounded border-2 border-black transition-all ease-in duration-200 great-vibes-regular`}>
+        } top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-40 bg-[#CD9A30] px-14 py-4 rounded border-2 border-black transition-all ease-in duration-200 font-lost-fish text-3xl text-stone-800`}>
         Explore
       </button>
     </Link>
