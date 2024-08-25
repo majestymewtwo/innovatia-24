@@ -10,6 +10,7 @@ import Details from "./pages/Details";
 import { useEffect, useState } from "react";
 import Loader from "./pages/Loader";
 import { AnimatePresence } from "framer-motion";
+import MainLayout from "./layouts/MainLayout";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -28,7 +29,11 @@ function App() {
     },
     {
       path: "/welcome",
-      element: <Details key='/welcome' />,
+      element: (
+        <MainLayout>
+          <Details key='/welcome' />
+        </MainLayout>
+      ),
     },
     {
       path: "*",
