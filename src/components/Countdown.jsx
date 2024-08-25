@@ -41,11 +41,11 @@ export default CountdownTimer;
 
 const TimeCard = ({ timeLeft, timeName }) => {
   return (
-    <div className='flex flex-col justify-center items-center space-y-2 border-4 border-white drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)] size-32 p-3 rounded-lg bg-white/5 text-white'>
-      <h2 className='md:text-5xl text-6xl font-sandy-toes-wave drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)]'>
+    <div className='flex flex-col justify-center items-center space-y-1 border-2 border-white drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)] size-20 lg:size-32 p-3 rounded-lg bg-white/5 text-white'>
+      <h2 className='md:text-5xl text-5xl font-sandy-toes-wave drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)]'>
         {timeLeft}
       </h2>
-      <h2 className='md:text-lg text-lg font-bold font-sandy-toes tracking-wide drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)]'>
+      <h2 className='md:text-lg text-sm font-bold font-sandy-toes tracking-wide drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)]'>
         {timeName}
       </h2>
     </div>
