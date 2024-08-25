@@ -2,6 +2,7 @@ import Lottie from "lottie-react";
 import React from "react";
 import oceanReef from "@/assets/animations/ocean-reef-1.json";
 import { motion as m } from "framer-motion";
+import CountdownTimer from "@/components/Countdown";
 
 const Details = () => {
   return (
@@ -11,15 +12,16 @@ const Details = () => {
       transition={{ duration: 0.75 }}
       exit={{ y: "-100%", opacity: 0 }}
       className='bg-transparent relative flex overflow-hidden'>
+      <Lottie className='absolute w-screen z-0' animationData={oceanReef} />
       <div className='z-10 flex flex-col items-center py-10 w-full min-h-screen'>
         <div className='text-white text-center'>
-          <h3 className='text-2xl font-bold drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
+          <h3 className='text-2xl font-serif font-bold drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
             Department of M.Tech Computer Science & Engineering
           </h3>
           <p className='drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
             in association with
           </p>
-          <h3 className='text-2xl font-bold drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
+          <h3 className='text-2xl font-serif font-bold drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
             Sai Infoblitz
           </h3>
           <p className='drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
@@ -31,8 +33,8 @@ const Details = () => {
           <span className='font-sandy-toes-starfish'>3.</span>
           <span className='font-sandy-toes-palm'>0</span>
         </h1>
+        <CountdownTimer targetDate={"09-11-2024"} />
       </div>
-      <Lottie className='absolute w-screen z-0' animationData={oceanReef} />
     </m.div>
   );
 };
