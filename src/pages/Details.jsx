@@ -26,7 +26,7 @@ const Details = () => {
       </div>
       <Link
         to='/'
-        className='select-none flex items-baseline space-x-4 text-white drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
+        className='select-none px-4 lg:px-0 flex items-baseline space-x-4 text-white drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
         <h1 className='font-lost-fish text-4xl lg:text-8xl'>INNOVATIA</h1>
         <h1 className='font-sandy-toes-starfish text-6xl lg:text-9xl'>3.</h1>
         <h1 className='font-sandy-toes-palm text-6xl lg:text-9xl'>0</h1>
