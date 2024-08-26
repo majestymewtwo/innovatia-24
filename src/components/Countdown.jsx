@@ -27,7 +27,7 @@ const CountdownTimer = ({ targetDate }) => {
 
   return (
     <div>
-      <div className='flex flex-wrap justify-center w-1/2 mx-auto lg:w-full gap-4'>
+      <div className='flex flex-wrap justify-center w-2/3 mx-auto lg:w-full gap-4'>
         <TimeCard timeLeft={timeLeft.days} timeName='DAYS' />
         <TimeCard timeLeft={timeLeft.hours} timeName='HOURS' />
         <TimeCard timeLeft={timeLeft.minutes} timeName='MINUTES' />
