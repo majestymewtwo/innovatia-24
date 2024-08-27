@@ -65,7 +65,7 @@ const Events = () => {
       {/* Events Tabs */}
       <Tabs.Root
         defaultValue='technical'
-        className='w-full border-2 border-white rounded-md h-[70vh] text-white z-10 drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
+        className='w-full border-2 border-white rounded-md lg:h-[70vh] text-white z-10 drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
         <Tabs.List className='flex'>
           <Tabs.Trigger
             value='technical'
