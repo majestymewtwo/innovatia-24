@@ -7,18 +7,44 @@ const Events = () => {
   const technicalEvents = [
     {
       name: "Event 1",
-      image: "Image 1",
-      info: "This is information about event 1",
+      image: "/placeholder.webp",
+      info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aut eum dolore non maiores reiciendis repudiandae aliquam.",
     },
     {
       name: "Event 2",
-      image: "Image 2",
-      info: "This is information about event 2",
+      image: "/placeholder.webp",
+      info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aut eum dolore non maiores reiciendis repudiandae aliquam.",
     },
     {
       name: "Event 3",
-      image: "Image 3",
-      info: "This is information about event 3",
+      image: "/placeholder.webp",
+      info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aut eum dolore non maiores reiciendis repudiandae aliquam.",
+    },
+  ];
+
+  const nonTechnicalEvents = [
+    {
+      name: "Event 4",
+      image: "/placeholder.webp",
+      info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aut eum dolore non maiores reiciendis repudiandae aliquam.",
+    },
+    {
+      name: "Event 5",
+      image: "/placeholder.webp",
+      info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aut eum dolore non maiores reiciendis repudiandae aliquam.",
+    },
+    {
+      name: "Event 6",
+      image: "/placeholder.webp",
+      info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aut eum dolore non maiores reiciendis repudiandae aliquam.",
+    },
+  ];
+
+  const workshops = [
+    {
+      name: "Workshop 1",
+      image: "/placeholder.webp",
+      info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aut eum dolore non maiores reiciendis repudiandae aliquam.",
     },
   ];
 
@@ -58,15 +84,57 @@ const Events = () => {
           </Tabs.Trigger>
         </Tabs.List>
         <Tabs.Content className='p-4' value='technical'>
-          Technical Events List
+          Our Technical Events
+          <div className='grid grid-cols-1 lg:grid-cols-3 z-10 text-white'>
+            {technicalEvents.map((data, index) => (
+              <EventCard
+                key={index}
+                name={data.name}
+                pic={data.image}
+                info={data.info}
+              />
+            ))}
+          </div>
         </Tabs.Content>
         <Tabs.Content className='p-4' value='non-technical'>
-          Non Technical Events List
+          Our Non Technical Events
+          <div className='grid grid-cols-1 lg:grid-cols-3 z-10 text-white'>
+            {nonTechnicalEvents.map((data, index) => (
+              <EventCard
+                key={index}
+                name={data.name}
+                pic={data.image}
+                info={data.info}
+              />
+            ))}
+          </div>
         </Tabs.Content>
         <Tabs.Content className='p-4' value='workshop'>
-          Workshop List
+          Our Workshops
+          <div className='grid grid-cols-1 lg:grid-cols-3 z-10 text-white'>
+            {workshops.map((data, index) => (
+              <EventCard
+                key={index}
+                name={data.name}
+                pic={data.image}
+                info={data.info}
+              />
+            ))}
+          </div>
         </Tabs.Content>
       </Tabs.Root>
+    </div>
+  );
+};
+
+const EventCard = ({ name, pic, info }) => {
+  return (
+    <div className='p-2 space-y-2'>
+      <img className='h-40 w-full' src={pic} alt={name} />
+      <h1 className='text-xl font-black drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]'>
+        {name}
+      </h1>
+      <p className='drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>{info}</p>
     </div>
   );
 };
