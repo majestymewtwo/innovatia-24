@@ -9,7 +9,7 @@ const Team = () => {
         <Link to='/welcome'>
           <img
             src={backButton}
-            className='size-12 fill-white drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'
+            className='size-10 fill-white drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'
             alt='backButton'
           />
         </Link>

@@ -72,11 +72,19 @@ function App() {
     },
     {
       path: "*",
-      element: <Navigate to='/' />,
+      element: <Navigate to='/welcome' />,
     },
   ]);
 
-  return <RouterProvider className='select-none bg-black' router={router} />;
+  return (
+    <>
+      {loading ? (
+        <Loader />
+      ) : (
+        <RouterProvider className='select-none' router={router} />
+      )}
+    </>
+  );
 }
 
 export default App;

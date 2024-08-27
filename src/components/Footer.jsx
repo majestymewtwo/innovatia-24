@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <div
       id='footer'
-      className='flex flex-col md:flex-row justify-between items-center bottom-0 w-full text-white px-10 py-2 space-y-5 md:space-y-0 z-10'>
+      className='flex flex-col md:flex-row justify-between items-center bottom-0 w-full text-white px-10 py-2 space-y-5 md:space-y-0 z-10 lg:h-[10%]'>
       <div className='flex flex-col md:flex-row items-center gap-6'>
         <img src='/sec-logo-white.png' alt='sec-white-logo' className='h-16' />
         <h3 className='hidden md:block'>|</h3>
