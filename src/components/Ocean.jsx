@@ -9,7 +9,11 @@ import {
 import * as THREE from "three";
 import { Water } from "three/examples/jsm/objects/Water.js";
 import { OrbitControls, Sky, Text } from "@react-three/drei";
-import { FontLoader, TextGeometry } from "three/examples/jsm/Addons.js";
+import {
+  FontLoader,
+  TextGeometry,
+  TextureHelper,
+} from "three/examples/jsm/Addons.js";
 
 extend({ Water });
 
@@ -56,6 +60,7 @@ const CustomText = ({ children, ...props }) => {
     FontLoader,
     "/fonts/Sandy Toes Star Fish_Regular.json"
   );
+  const texture = useLoader(THREE.TextureLoader, "/textures/seaweed-2.avif");
   const meshRef = useRef();
 
   useEffect(() => {
@@ -77,10 +82,13 @@ const CustomText = ({ children, ...props }) => {
       const boundingBox = textGeometry.boundingBox;
       const offset = boundingBox.getCenter(new THREE.Vector3()).negate();
 
+      // texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
+      // texture.repeat.set(1, 1);
+
       // Set the mesh position to the offset to center it
       meshRef.current.position.set(offset.x, 15, -20);
     }
-  }, [font, children]);
+  }, [font, texture, children]);
 
   const geometry = new TextGeometry(children, {
     font,
@@ -97,7 +105,7 @@ const CustomText = ({ children, ...props }) => {
   return (
     <mesh {...props} ref={meshRef}>
       <bufferGeometry attach='geometry' {...geometry} />
-      <meshLambertMaterial attach='material' color={"#1A3636"} />
+      <meshLambertMaterial attach='material' color={"#D5ED9F"} map={texture} />
     </mesh>
   );
 };
