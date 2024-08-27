@@ -1,0 +1,55 @@
+{
+  "event-1": {
+    "name": "Random Event Name",
+    "info": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae nihil consequuntur, quos autem a sunt reprehenderit iusto fugiat, repudiandae sed minus, modi officiis amet ipsum velit. Sint architecto culpa nihil fuga pariatur quod, voluptatem recusandae aut dolorem explicabo, dicta rem!",
+    "image": "/placeholder.webp",
+    "rounds": [
+      {
+        "mode": "Online",
+        "name": "Patchwork - The Bug Hunt & Responsive Rumble",
+        "date": "September 07, 2024",
+        "time": "4:00 PM Onwards",
+        "info": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae nihil consequuntur, quos autem a sunt reprehenderit iusto fugiat, repudiandae sed minus, modi officiis amet ipsum velit. Sint architecto culpa nihil fuga pariatur quod, voluptatem recusandae aut dolorem explicabo, dicta rem!"
+      },
+      {
+        "mode": "Offline",
+        "name": "Component Capers - A Crazy Collection Of Creativity",
+        "date": "September 11, 2024",
+        "time": "9:00 AM Onwards",
+        "info": "1. Participants choose a card representing a unique web component to design within a time limit. 2. Each team member works on their acquired component. 3. Correct execution determines advancement to the final round."
+      },
+      {
+        "mode": "Offline",
+        "name": "AI's Got Talent - Design Edition",
+        "date": "September 11, 2024",
+        "time": "12:00 PM Onwards",
+        "info": "1. Teams will request design ideas from ChatGPT, describing the desired elements without coding specifics. 2. Teams have an hour to implement and complete the design based on ChatGPT's provided ideas."
+      }
+    ],
+    "instructions": "Winners selected based on completed website quality. Judging criteria include submission quality, speed, and creative execution. Focus on problem-solving and creativity in web design challenges. Ultimate prize for the winning team's innovation and website quality. Every Participant is Required to join the whatsapp group from the link provided below!",
+    "venue": "Alpha Hall",
+    "last-date": "18.11.2023(11:00 AM)",
+    "form-link": "https://forms.google.com/",
+    "group-link": "https://chat.whatsapp.com/",
+    "brochure-link": "https://google.com/",
+    "coordinators": [
+      {
+        "name": "Muthu Aanand SU",
+        "phone": "+91 9XXXX XXXX0",
+        "type": "Student"
+      },
+      {
+        "name": "Gurusanjay R K",
+        "phone": "+91 9XXXX XXXX0",
+        "type": "Student"
+      },
+      {
+        "name": "Shiny A",
+        "phone": "+91 9XXXX XXXX0",
+        "type": "Staff"
+      }
+    ],
+    "team": "Group of 2",
+    "reporting-time": "9:00 AM"
+  }
+}

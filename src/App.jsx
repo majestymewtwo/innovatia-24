@@ -15,6 +15,7 @@ import Team from "./pages/Team";
 import About from "./pages/About";
 import Schedule from "./pages/Schedule";
 import Events from "./pages/Events";
+import EventInfo from "./pages/EventInfo";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -67,6 +68,14 @@ function App() {
       element: (
         <MainLayout>
           <Events />
+        </MainLayout>
+      ),
+    },
+    {
+      path: "/event/:eventName",
+      element: (
+        <MainLayout>
+          <EventInfo />
         </MainLayout>
       ),
     },
