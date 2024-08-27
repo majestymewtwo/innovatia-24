@@ -30,13 +30,13 @@ const CountdownTimer = ({ targetDate }) => {
       <h1 className='text-white text-xl text-center font-bold drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
         starts in
       </h1>
-      <div className='flex flex-wrap justify-center items-baseline w-2/3 mx-auto lg:w-full gap-4'>
+      <div className='flex justify-center items-baseline w-2/3 mx-auto lg:w-full gap-1 lg:gap-4'>
         <TimeCard timeLeft={timeLeft.days} timeName='DAYS' />
         <span className='text-7xl text-white drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
           :
         </span>
         <TimeCard timeLeft={timeLeft.hours} timeName='HOURS' />
-        <span className='hidden lg:block text-7xl text-white drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
+        <span className='text-7xl text-white drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
           :
         </span>
         <TimeCard timeLeft={timeLeft.minutes} timeName='MINUTES' />
