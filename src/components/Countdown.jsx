@@ -27,10 +27,22 @@ const CountdownTimer = ({ targetDate }) => {
 
   return (
     <div>
-      <div className='flex flex-wrap justify-center w-2/3 mx-auto lg:w-full gap-4'>
+      <h1 className='text-white text-xl text-center font-bold drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
+        starts in
+      </h1>
+      <div className='flex flex-wrap justify-center items-baseline w-2/3 mx-auto lg:w-full gap-4'>
         <TimeCard timeLeft={timeLeft.days} timeName='DAYS' />
+        <span className='text-7xl text-white drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
+          :
+        </span>
         <TimeCard timeLeft={timeLeft.hours} timeName='HOURS' />
+        <span className='hidden lg:block text-7xl text-white drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
+          :
+        </span>
         <TimeCard timeLeft={timeLeft.minutes} timeName='MINUTES' />
+        <span className='text-7xl text-white drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
+          :
+        </span>
         <TimeCard timeLeft={timeLeft.seconds} timeName='SECONDS' />
       </div>
     </div>
@@ -41,11 +53,11 @@ export default CountdownTimer;
 
 const TimeCard = ({ timeLeft, timeName }) => {
   return (
-    <div className='flex flex-col justify-center items-center space-y-1 border-2 border-white drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)] size-20 lg:size-32 p-3 rounded-lg bg-white/5 text-white'>
-      <h2 className='md:text-5xl text-5xl font-sandy-toes-wave drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)]'>
+    <div className='flex flex-col justify-center items-center space-y-1 drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)] rounded-lg text-white px-2'>
+      <h1 className='text-7xl font-sandy-toes-wave drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)]'>
         {timeLeft}
-      </h2>
-      <h2 className='md:text-lg text-sm font-bold font-sandy-toes tracking-wide drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)]'>
+      </h1>
+      <h2 className='text-lg font-bold font-sandy-toes tracking-wide drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)]'>
         {timeName}
       </h2>
     </div>

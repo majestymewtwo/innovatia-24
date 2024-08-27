@@ -1,5 +1,4 @@
 import OceanScene from "@/components/Ocean";
-import WavyFooter from "@/components/WavyFooter";
 import Wheel from "@/components/Wheel";
 import { motion as m } from "framer-motion";
 

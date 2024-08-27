@@ -9,15 +9,13 @@ const MainLayout = ({ children }) => {
   const location = useLocation();
   return (
     <AnimatePresence mode='wait'>
-      <div className='bg-transparent relative flex flex-col justify-between lg:h-screen overflow-hidden'>
+      <div className='relative flex flex-col justify-between bg-transparent lg:h-screen overflow-hidden'>
         <m.div
           key={location.pathname}
           initial={{ y: "100%", opacity: 0 }}
           animate={{ y: "0%", opacity: 1 }}
-          transition={{ duration: 0.7 }}
-          exit={{ y: "-100%", opacity: 0 }}
-          className="lg:h-[90%]"
-          >
+          transition={{ duration: 0.7, ease: "easeIn" }}
+          className='lg:h-[90%] lg:overflow-y-scroll pb-10'>
           {children}
         </m.div>
         <Footer />

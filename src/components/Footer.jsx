@@ -21,14 +21,14 @@ export default function Footer() {
         <a
           href='https://www.sairam.edu.in'
           target='_blank'
-          className='hover:scale-110 hover:text-cyan-400 transition-all ease-in-out duration-200'>
+          className='hover:scale-110 hover:text-cyan-700 transition-all ease-in-out duration-200'>
           www.sairam.edu.in
         </a>
         <h3 className='hidden md:block'>|</h3>
         <a
           href='https://mtech-cse-sairam.github.io/pulse-newsletter/'
           target='_blank'
-          className='hover:scale-110 hover:text-cyan-400 transition-all ease-in-out duration-200'>
+          className='hover:scale-110 hover:text-cyan-700 transition-all ease-in-out duration-200'>
           Newsletter
         </a>
         <h3 className='hidden md:block'>|</h3>
@@ -40,7 +40,7 @@ export default function Footer() {
 
 function Socials() {
   const hoverClass =
-    "hover:scale-125 hover:text-cyan-400 transition-all ease-in-out duration-200 cursor-pointer";
+    "hover:scale-125 hover:text-cyan-700 transition-all ease-in-out duration-200 cursor-pointer";
   return (
     <div className='flex items-center gap-8 text-white'>
       <a href='https://www.instagram.com/mtechcsesairam/' target='_blank'>
