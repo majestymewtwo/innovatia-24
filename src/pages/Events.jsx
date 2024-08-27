@@ -73,7 +73,7 @@ const Events = () => {
       {/* Events Tabs */}
       <Tabs.Root
         defaultValue='technical'
-        className='w-full border-2 border-white rounded-md lg:h-[70vh] text-white z-10 drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
+        className='w-full border-2 border-white rounded-md lg:h-[70vh] text-white bg-[#0F1B33]/25 z-10 drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
         <Tabs.List className='flex'>
           <Tabs.Trigger
             value='technical'
@@ -101,8 +101,8 @@ const Events = () => {
                 pic={data.image}
                 info={data.info}
                 path={data.key}
-                />
-              ))}
+              />
+            ))}
           </div>
         </Tabs.Content>
         <Tabs.Content className='p-4' value='non-technical'>
@@ -110,11 +110,11 @@ const Events = () => {
           <div className='grid grid-cols-1 gap-5 lg:grid-cols-3 z-10 text-white'>
             {nonTechnicalEvents.map((data, index) => (
               <EventCard
-              key={index}
-              name={data.name}
-              pic={data.image}
-              info={data.info}
-              path={data.key}
+                key={index}
+                name={data.name}
+                pic={data.image}
+                info={data.info}
+                path={data.key}
               />
             ))}
           </div>
@@ -124,11 +124,11 @@ const Events = () => {
           <div className='grid grid-cols-1 gap-5 lg:grid-cols-3 z-10 text-white'>
             {workshops.map((data, index) => (
               <EventCard
-              key={index}
-              name={data.name}
-              pic={data.image}
-              info={data.info}
-              path={data.key}
+                key={index}
+                name={data.name}
+                pic={data.image}
+                info={data.info}
+                path={data.key}
               />
             ))}
           </div>

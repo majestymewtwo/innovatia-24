@@ -1,6 +1,7 @@
 import React from "react";
 import backButton from "/back-button.png";
 import { Link } from "react-router-dom";
+import { EventTimeline } from "@/components/Timeline";
 
 const Schedule = () => {
   return (
@@ -16,6 +17,9 @@ const Schedule = () => {
         <h1 className='text-4xl lg:text-6xl font-beauty-mountain drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
           Event Schedule & Venues
         </h1>
+      </div>
+      <div className='flex items-center justify-center'>
+        <EventTimeline />
       </div>
     </div>
   );
