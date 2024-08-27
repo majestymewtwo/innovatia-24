@@ -13,7 +13,7 @@ const Team = () => {
             alt='backButton'
           />
         </Link>
-        <h1 className='text-5xl lg:text-6xl font-beauty-mountain drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
+        <h1 className='text-4xl lg:text-6xl font-beauty-mountain drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
           Our Team and Volunteers
         </h1>
       </div>

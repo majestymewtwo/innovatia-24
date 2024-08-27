@@ -15,7 +15,7 @@ const MainLayout = ({ children }) => {
           initial={{ y: "100%", opacity: 0 }}
           animate={{ y: "0%", opacity: 1 }}
           transition={{ duration: 0.7, ease: "easeIn" }}
-          className='lg:h-[90%] lg:overflow-y-scroll pb-10'>
+          className='min-h-screen lg:min-h-min lg:h-[90%] lg:overflow-y-scroll pb-10'>
           {children}
         </m.div>
         <Footer />
