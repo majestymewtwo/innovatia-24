@@ -22,7 +22,7 @@ const EventInfo = () => {
         </h1>
       </div>
       <div className='space-y-4 bg-[#0F1B33]/50 p-4 rounded-md'>
-        <div className='flex gap-10 items-center'>
+        <div className='flex flex-col lg:flex-row gap-10 items-center'>
           <div className='space-y-4'>
             <p className='text-xl font-bold drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)] text-justify'>
               {eventData.info}
@@ -38,14 +38,14 @@ const EventInfo = () => {
             </p>
           </div>
           <img
-            className='w-1/2 rounded-md shadow-lg'
+            className='lg:w-1/2 rounded-md shadow-lg'
             src={eventData.image}
             alt={eventName}
           />
         </div>
-        <div className='py-5 flex items-start justify-around gap-7'>
+        <div className='py-5 flex flex-col lg:flex-row items-start justify-around gap-7'>
           {eventData.rounds.map((round, index) => (
-            <div key={index} className={`font-bold text-center w-1/3`}>
+            <div key={index} className={`font-bold text-center lg:w-1/3`}>
               <h1 className='text-3xl font-lost-fish drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
                 Round <span className='font-black font-sans'>{index + 1}</span>
               </h1>
@@ -67,34 +67,34 @@ const EventInfo = () => {
         <p className='text-xl text-justify font-bold drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)] my-5'>
           {eventData.instructions}
         </p>
-        <div className='flex gap-4 items-center justify-center py-5 font-lost-fish text-xl'>
+        <div className='flex flex-col lg:flex-row gap-4 items-center justify-center py-5 font-lost-fish text-xl'>
           <a
-            className='p-4 border-2 border-white rounded-md font-bold drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)] transition-all ease-in-out duration-200 hover:scale-105 hover:bg-[#223a6c]'
+            className='p-4 w-full text-center lg:w-fit border-2 border-white rounded-md font-bold drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)] transition-all ease-in-out duration-200 hover:scale-105 hover:bg-[#223a6c]'
             href={eventData["form-link"]}
             target='_blank'>
             Register Now
           </a>
           <a
-            className='p-4 border-2 border-white rounded-md font-bold drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)] transition-all ease-in-out duration-200 hover:scale-105 hover:bg-[#223a6c]'
+            className='p-4 w-full text-center lg:w-fit border-2 border-white rounded-md font-bold drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)] transition-all ease-in-out duration-200 hover:scale-105 hover:bg-[#223a6c]'
             href={eventData["group-link"]}
             target='_blank'>
             Group Link
           </a>
 
           <a
-            className='p-4 border-2 border-white rounded-md font-bold drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)] transition-all ease-in-out duration-200 hover:scale-105 hover:bg-[#223a6c]'
+            className='p-4 w-full text-center lg:w-fit border-2 border-white rounded-md font-bold drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)] transition-all ease-in-out duration-200 hover:scale-105 hover:bg-[#223a6c]'
             href={eventData["brochure-link"]}
             target='_blank'>
             Event Brochure
           </a>
         </div>
-        <div className='flex justify-between'>
+        <div className='flex flex-col lg:flex-row h-56 lg:h-fit justify-between'>
           <div className='gap-2 flex flex-col'>
             <h1 className='font-lost-fish text-2xl'>Student Co-ordinators</h1>
             {eventData.coordinators.map((person, index) => {
               if (person.type === "Student")
                 return (
-                  <div className='flex font-bold items-center gap-4'>
+                  <div className='flex font-bold items-center gap-4 text-lg'>
                     <h1>{person.name}</h1>
                     <h1>{person.phone}</h1>
                   </div>
@@ -106,7 +106,7 @@ const EventInfo = () => {
             {eventData.coordinators.map((person, index) => {
               if (person.type === "Staff")
                 return (
-                  <div className='flex font-bold items-center gap-4'>
+                  <div className='flex font-bold items-center gap-4 text-lg'>
                     <h1>{person.name}</h1>
                     <h1>{person.phone}</h1>
                   </div>
