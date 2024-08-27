@@ -8,7 +8,7 @@ import NavButton from "@/components/NavButton";
 
 const Details = () => {
   return (
-    <div className='z-10 flex flex-col space-y-10 items-center lg:py-10 w-full h-screen overflow-y-scroll'>
+    <div className='z-10 flex flex-col space-y-10 items-center p-6 lg:py-10 w-full lg:h-screen lg:overflow-y-scroll'>
       <div className='text-white text-center'>
         <h3 className='text-3xl lg:text-4xl lg:gap-2 flex flex-col lg:flex-row font-beauty-mountain font-bold drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
           <span>Department of</span>
@@ -26,7 +26,7 @@ const Details = () => {
       </div>
       <Link
         to='/'
-        className='select-none flex items-baseline space-x-4 text-white drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
+        className='select-none px-4 lg:px-0 flex items-baseline space-x-4 text-white drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
         <h1 className='font-lost-fish text-4xl lg:text-8xl'>INNOVATIA</h1>
         <h1 className='font-sandy-toes-starfish text-6xl lg:text-9xl'>3.</h1>
         <h1 className='font-sandy-toes-palm text-6xl lg:text-9xl'>0</h1>
