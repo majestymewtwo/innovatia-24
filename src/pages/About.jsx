@@ -21,7 +21,7 @@ const About = () => {
         </h1>
       </div>
       <div className='space-y-8'>
-        <div className='flex flex-row-reverse items-center justify-center'>
+        <div className='flex flex-col lg:flex-row-reverse items-center justify-center'>
           <Lottie animationData={oceanDiver} />
           <div className='space-y-2'>
             <h1 className='font-lost-fish text-4xl drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
@@ -36,7 +36,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className='flex flex-row gap-10 items-center justify-center'>
+        <div className='flex flex-col lg:flex-row gap-10 items-center justify-center'>
           <Lottie className='w-4/5' animationData={koiFish} />
           <div className='space-y-2'>
             <h1 className='font-lost-fish text-4xl drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
@@ -45,7 +45,7 @@ const About = () => {
             <p className='font-bold space-y-4 text-lg drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
               Department of M.Tech Computer Science and Engineering, Sri Sai Ram
               Engineering College is committed to
-              <ul className='list-disc'>
+              <ul className='list-disc px-4'>
                 <li className='list-outside'>
                   Accelerate the learning process by collaborating undergraduate
                   fundamentals & postgraduate focused learning & research.
