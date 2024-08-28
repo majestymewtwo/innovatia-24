@@ -108,7 +108,7 @@ const CustomText = ({ children, ...props }) => {
 const ShipModel = () => {
   const gltf = useLoader(
     GLTFLoader,
-    "../src/assets/pirate_ship_rigged/scene.gltf"
+    "/pirate_ship_rigged/scene.gltf"
   );
   return (
     <primitive object={gltf.scene} position={[0, 0, -40]} scale={[4, 4, 4]} />
