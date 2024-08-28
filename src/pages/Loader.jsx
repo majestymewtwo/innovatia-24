@@ -24,7 +24,7 @@ const Loader = () => {
   return (
     <div className='h-screen flex flex-col items-center justify-center overflow-hidden bg-cyan-800'>
       <Lottie className='size-64' animationData={sailingYacht} />
-      <div className='flex items-baseline gap-2'>
+      <div className='flex items-baseline gap-2 font-lost-fish'>
         <p className='text-white font-bold text-3xl'>Loading</p>
         {renderDots()}
       </div>
