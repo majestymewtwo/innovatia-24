@@ -9,21 +9,15 @@ import {
 import * as THREE from "three";
 import { Water } from "three/examples/jsm/objects/Water.js";
 import { OrbitControls, Sky, Text } from "@react-three/drei";
-import {
-  FontLoader,
-  TextGeometry,
-  TextureHelper,
-} from "three/examples/jsm/Addons.js";
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js"; // Import GLTFLoader
+import { FontLoader, TextGeometry } from "three/examples/jsm/Addons.js";
 
 extend({ Water });
 
 function Ocean() {
   const ref = useRef();
   const gl = useThree((state) => state.gl);
-  const waterNormals = useLoader(
-    THREE.TextureLoader,
-    "https://raw.githubusercontent.com/mrdoob/three.js/master/examples/textures/waternormals.jpg"
-  );
+  const waterNormals = useLoader(THREE.TextureLoader, "/textures/ocean.jpg");
 
   waterNormals.wrapS = waterNormals.wrapT = THREE.RepeatWrapping;
   const geom = useMemo(() => new THREE.PlaneGeometry(30000, 30000), []);
@@ -39,8 +33,7 @@ function Ocean() {
       fog: false,
       format: gl.encoding,
     }),
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    [waterNormals]
+    [waterNormals, gl.encoding]
   );
   useFrame(
     (state, delta) => (ref.current.material.uniforms.time.value += delta)
@@ -60,8 +53,16 @@ const CustomText = ({ children, ...props }) => {
     FontLoader,
     "/fonts/Sandy Toes Star Fish_Regular.json"
   );
-  const texture = useLoader(THREE.TextureLoader, "/textures/seaweed-2.avif");
+  const texture = useLoader(THREE.TextureLoader, "/textures/wood.avif");
   const meshRef = useRef();
+
+  useEffect(() => {
+    if (texture) {
+      texture.wrapT = THREE.RepeatWrapping;
+      texture.wrapS = THREE.RepeatWrapping;
+      texture.repeat.set(2, 2);
+    }
+  }, [texture]);
 
   useEffect(() => {
     if (font && meshRef.current) {
@@ -70,22 +71,16 @@ const CustomText = ({ children, ...props }) => {
         font,
         size: 20,
         depth: 1,
-        curveSegments: 12,
+        curveSegments: 24,
         bevelEnabled: true,
         bevelThickness: 0.3,
         bevelSize: 0.2,
         bevelOffset: 0,
         bevelSegments: 5,
       });
-
       textGeometry.computeBoundingBox();
       const boundingBox = textGeometry.boundingBox;
       const offset = boundingBox.getCenter(new THREE.Vector3()).negate();
-
-      // texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
-      // texture.repeat.set(1, 1);
-
-      // Set the mesh position to the offset to center it
       meshRef.current.position.set(offset.x, 15, -20);
     }
   }, [font, texture, children]);
@@ -94,19 +89,40 @@ const CustomText = ({ children, ...props }) => {
     font,
     size: 20,
     depth: 1,
-    curveSegments: 12,
+    curveSegments: 20,
     bevelEnabled: true,
     bevelThickness: 1,
-    bevelSize: 0.2,
+    bevelSize: 0.4,
     bevelOffset: 0,
-    bevelSegments: 5,
+    bevelSegments: 10,
   });
 
   return (
     <mesh {...props} ref={meshRef}>
       <bufferGeometry attach='geometry' {...geometry} />
-      <meshLambertMaterial attach='material' color={"#D5ED9F"} map={texture} />
+      <meshBasicMaterial attach='material' metalness={0.9} map={texture} />
     </mesh>
+  );
+};
+
+const ShipModel = () => {
+  const gltf = useLoader(
+    GLTFLoader,
+    "../src/assets/pirate_ship_rigged/scene.gltf"
+  );
+  return (
+    <primitive object={gltf.scene} position={[0, 0, -50]} scale={[2, 2, 2]} />
+  );
+};
+
+const OctopusModel = () => {
+  const gltf = useLoader(
+    GLTFLoader,
+    "../src/assets/greedy_octopuss_treasure_chest/scene.gltf"
+  );
+
+  return (
+    <primitive object={gltf.scene} position={[0, 3, 20]} scale={[2, 2, 2]} />
   );
 };
 
@@ -123,12 +139,9 @@ const OceanScene = () => {
           mieDirectionalG={0.8}
           sunPosition={[100, 10, 100]} // Sun position adjusted
         />
-        <ambientLight position={[100, 10, 100]} intensity={5} />
-        <directionalLight position={[100, 10, 100]} intensity={15} />
-        <spotLight position={[10, 0, 0]} intensity={10} />
-        <CustomText position={[0, 30, 0]} color='#ffffff'>
-          Innovatia 3.0
-        </CustomText>
+        <ambientLight position={[1, 30, 1]} intensity={10} />
+        <ShipModel />
+        <OctopusModel />
         <Ocean />
         <OrbitControls
           maxPolarAngle={Math.PI * 0.495}

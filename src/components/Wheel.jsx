@@ -10,7 +10,7 @@ const Wheel = () => {
       onMouseEnter={() => setRotate(true)}
       onMouseLeave={() => setRotate(false)}
       to='/welcome'
-      className='absolute -bottom-28 lg:-bottom-40 left-0 right-0 mx-auto size-72 cursor-pointer hover:-bottom-28 hover:size-[22rem] transition-all ease-in duration-200 select-none z-20'>
+      className='absolute -bottom-28 left-0 right-0 mx-auto size-72 cursor-pointer hover:-bottom-28 hover:size-[22rem] transition-all ease-in duration-200 select-none z-20'>
       <img
         src={wheelIcon}
         className={`pointer-events-none  ${
