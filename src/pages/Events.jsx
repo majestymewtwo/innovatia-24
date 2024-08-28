@@ -24,6 +24,12 @@ const Events = () => {
       image: "/placeholder.webp",
       info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aut eum dolore non maiores reiciendis repudiandae aliquam.",
     },
+    {
+      name: "Event 4",
+      key: "event-1",
+      image: "/placeholder.webp",
+      info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aut eum dolore non maiores reiciendis repudiandae aliquam.",
+    },
   ];
 
   const nonTechnicalEvents = [
@@ -73,7 +79,7 @@ const Events = () => {
       {/* Events Tabs */}
       <Tabs.Root
         defaultValue='technical'
-        className='w-full border-2 border-white rounded-md lg:h-[70vh] text-white bg-[#0F1B33]/25 z-10 drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
+        className='w-full border-2 border-white rounded-md lg:min-h-[70vh] text-white bg-[#0F1B33]/25 z-10 drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
         <Tabs.List className='flex'>
           <Tabs.Trigger
             value='technical'

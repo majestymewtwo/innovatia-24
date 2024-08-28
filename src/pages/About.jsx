@@ -42,7 +42,7 @@ const About = () => {
             <h1 className='font-lost-fish text-4xl drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
               Mission of the department
             </h1>
-            <p className='font-bold space-y-4 text-lg drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
+            <div className='font-bold space-y-4 text-lg drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
               Department of M.Tech Computer Science and Engineering, Sri Sai Ram
               Engineering College is committed to
               <ul className='list-disc px-4'>
@@ -62,7 +62,7 @@ const About = () => {
                   interpersonal skills.
                 </li>
               </ul>
-            </p>
+            </div>
           </div>
         </div>
         <div className='space-y-2 text-center font-poppins pt-9'>
