@@ -111,7 +111,7 @@ const ShipModel = () => {
     "../src/assets/pirate_ship_rigged/scene.gltf"
   );
   return (
-    <primitive object={gltf.scene} position={[0, 0, -50]} scale={[2, 2, 2]} />
+    <primitive object={gltf.scene} position={[0, 0, -40]} scale={[4, 4, 4]} />
   );
 };
 
@@ -122,7 +122,7 @@ const OctopusModel = () => {
   );
 
   return (
-    <primitive object={gltf.scene} position={[0, 3, 20]} scale={[2, 2, 2]} />
+    <primitive object={gltf.scene} position={[10, 3, 20]} scale={[4, 4, 4]} />
   );
 };
 
@@ -141,7 +141,6 @@ const OceanScene = () => {
         />
         <ambientLight position={[1, 30, 1]} intensity={10} />
         <ShipModel />
-        <OctopusModel />
         <Ocean />
         <OrbitControls
           maxPolarAngle={Math.PI * 0.495}
