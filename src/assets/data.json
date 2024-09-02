@@ -2,7 +2,7 @@
   "sictone": {
     "name": "Sictone",
     "info": "Sictone is an exciting event spread across three challenging and  nteractive rounds. Participants will engage in activities that test their abilities to accurately convey messages, recall and identify lyrics, and solve puzzles under time constraints. This event promises to be a fun-filled experience that will keep participants on their toes as they compete for the top spot.",
-    "image": "/placeholder.webp",
+    "image": "/events/sictone-poster.jpg",
     "rounds": [
       {
         "mode": "Online",
@@ -31,7 +31,7 @@
     "last-date": "September 7, 2024 (10:00 AM)",
     "form-link": "https://docs.google.com/forms/d/e/1FAIpQLSftEk-yNAwzs8pZv8giLPH8q0OEcX1CqLTYRWxROXGtu3i2ZA/viewform",
     "group-link": "https://chat.whatsapp.com/",
-    "brochure-link": "",
+    "brochure-link": "/events/sictone-poster.jpg",
     "coordinators": [
       {
         "name": "Mohammed Rizwan M",
@@ -130,7 +130,7 @@
     "last-date": "September 7, 2024 (10:00 AM)",
     "form-link": "https://docs.google.com/forms/d/e/1FAIpQLSepeTuI3S7UExZaJ0UHFpIYMgMtxaOmeC00i9blAFEDzDrHDA/viewform?usp=sf_link",
     "group-link": "https://chat.whatsapp.com/",
-    "brochure-link": "",
+    "brochure-link": "/events/devquest-poster.jpg",
     "coordinators": [
       {
         "name": "Nishanth P",
@@ -288,7 +288,7 @@
     "last-date": "September 7, 2024 (10:00 AM)",
     "form-link": "",
     "group-link": "https://chat.whatsapp.com/IDXyv6pGCTF46BS7aiuaCg",
-    "brochure-link": "/events/craft-wave-brochure.png",
+    "brochure-link": "/events/madd-wars-brochure.jpg",
     "coordinators": [
       {
         "name": "Roshan R S",

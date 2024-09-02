@@ -42,7 +42,7 @@ const Events = () => {
     {
       name: "Sictone",
       key: "sictone",
-      image: "/placeholder.webp",
+      image: "/events/sictone-poster.jpg",
       info: "An engaging and entertaining a series of rounds that challenge participants' knowledge, listening skills, lyrical memory, and puzzle-solving abilities. The event is designed to test teams in a fun, dynamic environment through cinematic quizzes and puzzle-solving tasks.",
     },
   ];
