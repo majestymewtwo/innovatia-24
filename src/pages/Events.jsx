@@ -37,7 +37,7 @@ const Events = () => {
       name: "M.A.D.D Wars",
       key: "madd-wars",
       image: "/events/madd-wars-poster.jpg",
-      info: "an extraordinary celebration of some of the most iconic worlds of adventure, heroism, and magic. Whether you're drawn to epic battles, enchanted lands, or the vibrant universes of beloved characters, this event has something for every fan. ",
+      info: "An extraordinary celebration of some of the most iconic worlds of adventure, heroism, and magic. Whether you're drawn to epic battles, enchanted lands, or the vibrant universes of beloved characters, this event has something for every fan. ",
     },
     {
       name: "Sictone",

@@ -6,6 +6,7 @@ import data from "@/assets/data.json";
 const EventInfo = () => {
   const { eventName } = useParams();
   const eventData = data[eventName];
+  const length = eventData.rounds.length;
 
   return (
     <div className='z-10 text-white p-4 lg:w-2/3 space-y-10 select-none mx-auto'>
@@ -43,20 +44,22 @@ const EventInfo = () => {
             alt={eventName}
           />
         </div>
-        <div className='py-5 flex flex-col lg:flex-row items-start justify-around gap-7'>
+        <div className={`py-5 grid grid-cols-1 ${length%2===0 ? "lg:grid-cols-2" : "lg:grid-cols-3"} items-start justify-around gap-7`}>
           {eventData.rounds.map((round, index) => (
             <div
               key={index}
-              className={`font-bold text-center lg:w-1/${eventData.rounds.length}`}>
+              className={`font-bold text-center`}>
               <h1 className='text-3xl font-lost-fish drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
                 Round{" "}
                 <span className='text-4xl font-black font-sans'>
                   {index + 1}
                 </span>
               </h1>
-              <p className='drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
-                Name - {round.name}
-              </p>
+              {round.name && (
+                <p className='drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
+                  Name - {round.name}
+                </p>
+              )}
               <p className='drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
                 Mode - {round.mode}
               </p>

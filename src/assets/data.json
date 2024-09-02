@@ -196,5 +196,117 @@
     ],
     "team": "Group of 2 or 3",
     "reporting-time": "9:00 AM"
+  },
+  "craft-wave": {
+    "name": "Craft Wave",
+    "info": "CraftWave is a creative and environmentally-focused competition designed to raise awareness about ocean pollution caused by improper waste disposal. Participants will engage in a series of challenges that combine art, innovation, and sustainability. The event aims to inspire practical solutions through creative expression, emphasizing the importance of protecting our oceans. The event is divided into three rounds, each testing the participants' creativity, resourcefulness, and commitment to reducing ocean pollution.",
+    "image": "/events/craft-wave-poster.png",
+    "rounds": [
+      {
+        "mode": "Online",
+        "name": "Design for the Ocean",
+        "date": "To be decided",
+        "time": "Pre-event submission",
+        "info": "In this round, participants must submit a design, awareness poster, or logo that highlights the issue of ocean pollution caused by improper waste disposal. The designs should be impactful and thought-provoking, aiming to educate and inspire action. The best submissions will be selected for the next round."
+      },
+      {
+        "mode": "Offline",
+        "name": "Crafting for Change",
+        "date": "September 11, 2024",
+        "time": "10:30 am to 11:45 am",
+        "info": "elected participants will be provided with lots containing different waste materials such as newspapers, ice sticks, wool, or other items commonly found as ocean pollutants. Using these materials, they must construct a useful craft that reflects their understanding of the environmental impact and showcases their ability to repurpose waste into something valuable. This round will take place in person, where creativity and innovation are key."
+      },
+      {
+        "mode": "Offline",
+        "name": "Presenting the Solution",
+        "date": "September 11, 2024",
+        "time": "12:35 pm to 2:00 pm",
+        "info": "In the final round, participants will present their crafted item to the judges, explaining how it contributes to reducing ocean pollution or how it represents a sustainable solution. This presentation will be critical in determining the overall impact and effectiveness of the craft in addressing environmental issues."
+      }
+    ],
+    "instructions": "All designs for the first round must be original and submitted by the deadline. Participants are required to be present at the venue for the second and third rounds. Craft materials will be provided based on lots drawn by the participants. The main property on which the craft will be constructed, such as plastic bottles, newspapers, or ice sticks, will be provided by the organizers. Participants must bring other essential materials, including scissors, glue, cutters, and decorative items like paint and colored paper. Presentations should be concise and focus on the environmental benefits of the crafted item.",
+    "venue": "To be decided",
+    "last-date": "September 7, 2024 (10:00 AM)",
+    "form-link": "https://forms.gle/V9GQiUtKmN7PN7qr8",
+    "group-link": "https://chat.whatsapp.com/LyUWlgPYKWsFgB1Y5WF9H6",
+    "brochure-link": "/events/craft-wave-brochure.png",
+    "coordinators": [
+      {
+        "name": "Yogitha M",
+        "phone": "+91 - 97909 81152",
+        "type": "Student"
+      },
+      {
+        "name": "Swathika S",
+        "phone": "+91 86677 33239",
+        "type": "Student"
+      },
+      {
+        "name": "Mr. LakshmiNarayanan",
+        "phone": "+91 97907 03366",
+        "type": "Staff"
+      }
+    ],
+    "team": "1 or 2 Members",
+    "reporting-time": "10:00 AM"
+  },
+  "madd-wars": {
+    "name": "M.A.D.D Wars",
+    "info": "Join us for an extraordinary celebration of some of the most iconic worlds of adventure, heroism, and magic. Immerse yourself in realms where legendary heroes, fantastical creatures, and timeless tales come to life. Whether you're drawn to epic battles, enchanted lands, or the vibrant universes of beloved characters, this event has something for every fan. Get ready to explore, create, and connect with others who share your passion for these unforgettable stories.",
+    "image": "/events/madd-wars-poster.jpg",
+    "rounds": [
+      {
+        "mode": "Online",
+        "date": "To be decided",
+        "time": "Pre-event submission",
+        "info": "Any 2 rounds out of these 3 will be conducted. Menti Quiz. Video Question Dialogue/Movie Clip. Dialogue Guessing"
+      },
+      {
+        "mode": "Offline",
+        "name": "Crafting for Change",
+        "date": "September 11, 2024",
+        "time": "10:30 am to 11:45 am",
+        "info": "Selected participants will be provided with lots containing different waste materials such as newspapers, ice sticks, wool, or other items commonly found as ocean pollutants. Using these materials, they must construct a useful craft that reflects their understanding of the environmental impact and showcases their ability to repurpose waste into something valuable. This round will take place in person, where creativity and innovation are key."
+      },
+      {
+        "mode": "Offline",
+        "name": "Guess the Character",
+        "date": "TBD",
+        "time": "Approximately 40 minutes",
+        "info": "Participants will be divided into teams of two. Each team will select a character and inform the set helper. Teams will then take turns asking each other yes/no questions to guess the character chosen by the opposing team. Each set is given a maximum of 7 minutes; if time exceeds, both teams receive no points. The round is expected to take approximately 40 minutes to complete."
+      },
+      {
+        "mode": "Offline",
+        "name": "What If?",
+        "date": "TBD",
+        "time": "Varies",
+        "info": "Participants will explore various scenarios by spinning a wheel to pick a lot. A random scenario will be assigned based on the color or number they pick, which they will then brainstorm and develop further."
+      }
+    ],
+    "instructions": "Participants are requested to join in the WhatsApp group link below!",
+    "venue": "To be decided",
+    "last-date": "September 7, 2024 (10:00 AM)",
+    "form-link": "",
+    "group-link": "https://chat.whatsapp.com/IDXyv6pGCTF46BS7aiuaCg",
+    "brochure-link": "/events/craft-wave-brochure.png",
+    "coordinators": [
+      {
+        "name": "Roshan R S",
+        "phone": "+91 - 98412 63009",
+        "type": "Student"
+      },
+      {
+        "name": "Praisy Sherlin",
+        "phone": "+91 79043 18997",
+        "type": "Student"
+      },
+      {
+        "name": "Ms. Lalitha",
+        "phone": "+91 77998 74563",
+        "type": "Staff"
+      }
+    ],
+    "team": "2 or 3 Members",
+    "reporting-time": "10:00 AM"
   }
 }
