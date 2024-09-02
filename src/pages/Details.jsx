@@ -10,14 +10,14 @@ const Details = () => {
   return (
     <div className='z-10 flex flex-col space-y-6 items-center p-6 lg:py-10 w-full lg:overflow-y-scroll'>
       <div className='text-white text-center space-y-2'>
-        <h3 className='text-3xl lg:gap-2 flex flex-col lg:flex-row font-beauty-mountain font-bold drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
+        <h3 className='text-2xl lg:gap-2 flex flex-col lg:flex-row font-black drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
           <span>Department of</span>
           <span>M.Tech Computer Science & Engineering</span>
         </h3>
         <p className='text-xs font-bold lg:text-sm drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
           in association with
         </p>
-        <h3 className='text-3xl tracking-wider font-beauty-mountain font-bold drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
+        <h3 className='text-3xl font-black drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
           Sai Infoblitz
         </h3>
         <p className='text-xs font-bold lg:text-sm drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
