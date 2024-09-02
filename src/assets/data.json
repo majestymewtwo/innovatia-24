@@ -1,55 +1,200 @@
 {
-  "event-1": {
-    "name": "Random Event Name",
-    "info": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae nihil consequuntur, quos autem a sunt reprehenderit iusto fugiat, repudiandae sed minus, modi officiis amet ipsum velit. Sint architecto culpa nihil fuga pariatur quod, voluptatem recusandae aut dolorem explicabo, dicta rem!",
+  "sictone": {
+    "name": "Sictone",
+    "info": "Sictone is an exciting event spread across three challenging and  nteractive rounds. Participants will engage in activities that test their abilities to accurately convey messages, recall and identify lyrics, and solve puzzles under time constraints. This event promises to be a fun-filled experience that will keep participants on their toes as they compete for the top spot.",
     "image": "/placeholder.webp",
     "rounds": [
       {
         "mode": "Online",
-        "name": "Patchwork - The Bug Hunt & Responsive Rumble",
-        "date": "September 07, 2024",
-        "time": "4:00 PM Onwards",
-        "info": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae nihil consequuntur, quos autem a sunt reprehenderit iusto fugiat, repudiandae sed minus, modi officiis amet ipsum velit. Sint architecto culpa nihil fuga pariatur quod, voluptatem recusandae aut dolorem explicabo, dicta rem!"
+        "name": "Sound Savvy",
+        "date": "To be decided",
+        "time": "1 minute per team",
+        "info": "Teams will stand in a line, each participant wearing headphones. The first participant whispers a sentence to the next person in line, who then passes it on. The goal is to accurately convey the sentence through whispers within the time limit. The team with the most accurate message wins this round."
       },
       {
         "mode": "Offline",
-        "name": "Component Capers - A Crazy Collection Of Creativity",
+        "name": "Lyric Looty",
         "date": "September 11, 2024",
-        "time": "9:00 AM Onwards",
-        "info": "1. Participants choose a card representing a unique web component to design within a time limit. 2. Each team member works on their acquired component. 3. Correct execution determines advancement to the final round."
+        "time": "Varies per turn",
+        "info": "In this round, teams will be presented with five songs that have missing lyrics. Each team will take turns trying to fill in the blanks with the correct lyrics. Points are awarded for each correct answer, and teams with the highest scores will advance to the next round."
       },
       {
         "mode": "Offline",
-        "name": "AI's Got Talent - Design Edition",
+        "name": "Mind Spark",
         "date": "September 11, 2024",
-        "time": "12:00 PM Onwards",
-        "info": "1. Teams will request design ideas from ChatGPT, describing the desired elements without coding specifics. 2. Teams have an hour to implement and complete the design based on ChatGPT's provided ideas."
+        "time": "2 minutes per puzzle",
+        "info": "Participants will be given a puzzle to solve within 2 minutes. Each team member has 20 seconds to work on the puzzle before passing it to the next teammate. The team that solves the puzzle the fastest, or makes the most progress within the time limit, wins this final round."
       }
     ],
-    "instructions": "Winners selected based on completed website quality. Judging criteria include submission quality, speed, and creative execution. Focus on problem-solving and creativity in web design challenges. Ultimate prize for the winning team's innovation and website quality. Every Participant is Required to join the whatsapp group from the link provided below!",
-    "venue": "Alpha Hall",
-    "last-date": "18.11.2023(11:00 AM)",
-    "form-link": "https://forms.google.com/",
+    "instructions": "Points will be awarded in each round based on the team's performance. The team with the highest total points at the end of all three rounds will be declared the winner. All team members must participate in each round as per the round-specific instructions. Teamwork and collaboration are crucial for success in this event.",
+    "venue": "To be decided",
+    "last-date": "September 7, 2024 (10:00 AM)",
+    "form-link": "https://docs.google.com/forms/d/e/1FAIpQLSftEk-yNAwzs8pZv8giLPH8q0OEcX1CqLTYRWxROXGtu3i2ZA/viewform",
     "group-link": "https://chat.whatsapp.com/",
-    "brochure-link": "https://google.com/",
+    "brochure-link": "",
     "coordinators": [
       {
-        "name": "Muthu Aanand SU",
-        "phone": "+91 9XXXX XXXX0",
+        "name": "Mohammed Rizwan M",
+        "phone": "+91 78716 02241",
         "type": "Student"
       },
       {
-        "name": "Gurusanjay R K",
-        "phone": "+91 9XXXX XXXX0",
+        "name": "Keerthi R",
+        "phone": "+91 93421 76649 ",
         "type": "Student"
       },
       {
-        "name": "Shiny A",
-        "phone": "+91 9XXXX XXXX0",
+        "name": "Ms. Kalpana",
+        "phone": "+91 95856 18987",
+        "type": "Staff"
+      }
+    ],
+    "team": "Group of 3",
+    "reporting-time": "9:00 AM"
+  },
+  "cryptic-heist": {
+    "name": "Cryptic Heist",
+    "info": "'Cryptic Heist' is an exciting online event that combines the thrill of a heist with the challenge of solving tech-based puzzles. Participants will navigate through a series of fun and engaging challenges, including code-breaking, QR code hunts, and logic puzzles. As they progress, they'll gather clues and unlock secrets, leading to the ultimate goal of pulling off the perfect virtual heist. It's a playful mix of mystery, strategy, and tech-savvy fun designed to test participants' problem-solving skills in a captivating way. Prior knowledge is not required .Clues will be given for all the tasks encountered. Final Goal: Piece together all the clues to unlock the final mystery and complete the heist!",
+    "image": "/events/cryptic-heist-poster.png",
+    "rounds": [
+      {
+        "mode": "Online",
+        "name": "The Cipher Shift",
+        "date": "September 09, 2024",
+        "time": "Evening - 8pm to 11 Pm",
+        "info": "In this round, participants will decode encrypted messages using concepts like Binary, Decimal, Hexadecimal, Octal, and complements (9's, 2's, 1's). Teams must apply their knowledge to crack codes and solve puzzles. Login & Submission Rules: 1. Single Login Per Team: Each team must use only one partner ID to log in. Multiple IDs from the same team will not be considered. 2.First Submission Only: Only the first submission from each team will be taken into account. Ensure that your first submission is complete and correct. 3. Registered IDs Only: Only submissions from registered IDs will be accepted. Ensure your team's ID is registered before the event."
+      },
+      {
+        "mode": "Offline",
+        "name": "Cryptic Heist",
+        "date": "September 11, 2024",
+        "time": "To be decided",
+        "info": "In this final round, shortlisted teams will face challenges in the venue . Participants will dive into a thrilling online adventure where participants become digital detectives, solving puzzles, cracking codes, and uncovering hidden secrets to complete a high-stakes virtual heist in fun way. Instructions for the round 2: ● Assemble your crew and work together on-site—Here,Teamwork & Both Partner mindset are the strongest weapon in cracking the codes and solving the puzzles. ● Gadget Arsenal: Arm yourselves with essential decoding tools such as must bring your laptops, Bring Ethernet Cable if you have ● Time Heist: Plan your moves carefully—each puzzle gets trickier as the clock ticks. Efficient time management is crucial to your mission. ● Final Loot: Deliver the final decrypted code in person to the game masters. Ensure your solution is flawless before making the drop."
+      }
+    ],
+    "instructions": "",
+    "venue": "To be decided",
+    "last-date": "September 7, 2024 (10:00 AM)",
+    "form-link": "https://forms.gle/XcMPAmqLDCcVo3hP9",
+    "group-link": "https://chat.whatsapp.com/",
+    "brochure-link": "/events/cryptic-heist-brochure.png",
+    "coordinators": [
+      {
+        "name": "Vaishnavi S",
+        "phone": "+91 - 82482 72707",
+        "type": "Student"
+      },
+      {
+        "name": "Pavithra R",
+        "phone": "+91 97898 43026",
+        "type": "Student"
+      },
+      {
+        "name": "Mr. G Yuvaraj",
+        "phone": "+91 80988 57554",
         "type": "Staff"
       }
     ],
     "team": "Group of 2",
+    "reporting-time": "9:00 AM"
+  },
+  "dev-quest": {
+    "name": "DevQuest",
+    "info": "DevQuest is an intuitive coding event spread across three challenging and interactive rounds. This event will feature a variety of coding tasks that require innovative thinking and a deep understanding of the time and space complexities involved in solving problems. Participants will have the opportunity to demonstrate their ability to write clean, efficient code and to think critically under pressure. With a focus on both individual excellence and collaborative problem-solving, the DevQuest Challenge promises to be an unforgettable experience for all who participate.",
+    "image": "/events/devquest-poster.jpg",
+    "rounds": [
+      {
+        "mode": "Online",
+        "name": "BitBattle",
+        "date": "To be decided",
+        "time": "20 Minutes",
+        "info": "The first round will be conducted online via Google Meet. Based on the number of registrations, the Google Meet session will be held in one or two slots. A quiz consisting of 20 questions based on computer technologies such as Python, Java, HTML, and CSS will be conducted through the Quizizz platform. Based on the rankings, the top-performing boys and girls will be selected"
+      },
+      {
+        "mode": "Offline",
+        "name": "Efficiency Showdown",
+        "date": "September 11, 2024",
+        "time": "1 Hour",
+        "info": "Participants will be presented with a complex code that suffers from high time and space complexity. Their mission is to optimize this code, significantly reducing its time complexity within a specified time limit. This round will test their ability to think critically and apply advanced optimization techniques under pressure. Participants who successfully complete this challenge will advance to the next round. This round promises to be intense and exhilarating, pushing participants to their limits and rewarding those who can deliver optimal solutions swiftly"
+      },
+      {
+        "mode": "Offline",
+        "name": "Mystery Round",
+        "date": "September 11, 2024",
+        "time": "To be decided",
+        "info": "Prepare yourself for the Enigma Unveiled round, a thrilling and unpredictable challenge that will be revealed only at the moment it begins. This round is shrouded in secrecy, designed to test your adaptability, quick thinking, and problem-solving skills in unexpected ways. Participants will face a unique and exciting task that could range from coding puzzles to algorithmic challenges. The specifics of the round will remain a mystery until it unfolds, adding an element of suspense and excitement to the competition. Are you ready to embrace the unknown and rise to the challenge?"
+      }
+    ],
+    "instructions": "Points will be awarded in each round based on the individual's performance. All participants must participate in each round as per the round-specific instructions.",
+    "venue": "To be decided",
+    "last-date": "September 7, 2024 (10:00 AM)",
+    "form-link": "https://docs.google.com/forms/d/e/1FAIpQLSepeTuI3S7UExZaJ0UHFpIYMgMtxaOmeC00i9blAFEDzDrHDA/viewform?usp=sf_link",
+    "group-link": "https://chat.whatsapp.com/",
+    "brochure-link": "",
+    "coordinators": [
+      {
+        "name": "Nishanth P",
+        "phone": "+91 - 93428 70058",
+        "type": "Student"
+      },
+      {
+        "name": "Indhumathi S",
+        "phone": "+91 70102 94950",
+        "type": "Student"
+      },
+      {
+        "name": "Mr. M  Ahsan Shariff",
+        "phone": "+91 98409 48078",
+        "type": "Staff"
+      }
+    ],
+    "team": "Individual Participation",
+    "reporting-time": "9:00 AM"
+  },
+  "voyage-of-visions": {
+    "name": "Voyage of Visions",
+    "info": "A dynamic paper presentation event that encourages participants to explore the vast seas of technology and innovation. Dive deep into your area of expertise and share groundbreaking research and fresh ideas across various technological fields. Presenters are invited to chart new courses in science, engineering, and digital innovation, contributing to a diverse knowledge pool. This event provides a platform to showcase your work to a panel of esteemed experts, connect with like-minded peers, and make significant waves in the world of technology. Whether you're focused on AI, environmental sustainability, or cutting-edge engineering, welcomes you to navigate the future of technology with your unique perspectives",
+    "image": "/events/voyage-of-visions-poster.jpg",
+    "rounds": [
+      {
+        "mode": "Online",
+        "name": "Virtual voyage",
+        "date": "To be decided",
+        "time": "To be decided",
+        "info": "1.Submit your ideas and presentations using the designated Google form 2.Highlight the practical applications and real-world implications of your innovative concepts. 3.Selection criteria will emphasize the potential impact and feasibility of your innovation. 4.Adhere to the submission deadline to ensure your work is reviewed and considered."
+      },
+      {
+        "mode": "Offline",
+        "name": "In-person plunge",
+        "date": "September 11, 2024",
+        "time": "9.30am to 3.00pm",
+        "info": "1.Teams shortlisted from Round 1 are eligible to advance to the offline presentation round. 2.Each team will be allocated 3-5 minutes for their presentation. 3.Emphasize the practical implementation and refinement of your innovations. 4.Present your work to the judging panel for final evaluation. 5.Judging will be based on the potential impact and practicality of your innovations."
+      }
+    ],
+    "instructions": "1.Teams should consist of 2-3 members, fostering collaboration and incorporating diverse perspectives. 2.Emphasize transforming ideas into practical and commercially viable products or services. 3. Register on or before 08.09.2024 (11:59 pm). 4.Participants should report at 9:00 am to the venue. 5. Each team will be given 3 to 5 minutes for presentation and there will be a questioning session.",
+    "venue": "To be decided",
+    "last-date": "September 7, 2024 (10:00 AM)",
+    "form-link": "https://forms.gle/wXFUvLB5B7xknmpA6",
+    "group-link": "https://chat.whatsapp.com/",
+    "brochure-link": "/events/voyage-of-visions-brochure.jpg",
+    "coordinators": [
+      {
+        "name": "Niveditha S",
+        "phone": "+91 - 80560 71373",
+        "type": "Student"
+      },
+      {
+        "name": "Prajith B",
+        "phone": "+91 94897 14682",
+        "type": "Student"
+      },
+      {
+        "name": "Ms. Sarala Devi",
+        "phone": "+91 XXXXX XXXXX",
+        "type": "Staff"
+      }
+    ],
+    "team": "Group of 2 or 3",
     "reporting-time": "9:00 AM"
   }
 }

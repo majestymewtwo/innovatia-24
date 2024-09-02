@@ -45,10 +45,18 @@ const EventInfo = () => {
         </div>
         <div className='py-5 flex flex-col lg:flex-row items-start justify-around gap-7'>
           {eventData.rounds.map((round, index) => (
-            <div key={index} className={`font-bold text-center lg:w-1/3`}>
+            <div
+              key={index}
+              className={`font-bold text-center lg:w-1/${eventData.rounds.length}`}>
               <h1 className='text-3xl font-lost-fish drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
-                Round <span className='font-black font-sans'>{index + 1}</span>
+                Round{" "}
+                <span className='text-4xl font-black font-sans'>
+                  {index + 1}
+                </span>
               </h1>
+              <p className='drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
+                Name - {round.name}
+              </p>
               <p className='drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
                 Mode - {round.mode}
               </p>
