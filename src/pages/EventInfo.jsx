@@ -44,11 +44,12 @@ const EventInfo = () => {
             alt={eventName}
           />
         </div>
-        <div className={`py-5 grid grid-cols-1 ${length%2===0 ? "lg:grid-cols-2" : "lg:grid-cols-3"} items-start justify-around gap-7`}>
+        <div
+          className={`py-5 grid grid-cols-1 ${
+            length % 2 === 0 ? "lg:grid-cols-2" : "lg:grid-cols-3"
+          } items-start justify-around gap-7`}>
           {eventData.rounds.map((round, index) => (
-            <div
-              key={index}
-              className={`font-bold text-center`}>
+            <div key={index} className={`font-bold text-center`}>
               <h1 className='text-3xl font-lost-fish drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
                 Round{" "}
                 <span className='text-4xl font-black font-sans'>
@@ -66,9 +67,11 @@ const EventInfo = () => {
               <p className='drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
                 Date - {round.date}
               </p>
-              <p className='drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
-                Time - {round.time}
-              </p>
+              {round.time && (
+                <p className='drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
+                  Time - {round.time}
+                </p>
+              )}
               <p className='drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)] my-5 text-justify'>
                 {round.info}
               </p>
