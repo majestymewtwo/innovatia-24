@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import sailingYacht from "@/assets/animations/yacht-sailing.json";
 import Lottie from "lottie-react";
 
-const Loader = () => {
+const Loader = ({ height }) => {
   const [dots, setDots] = useState(0);
 
   useEffect(() => {
@@ -22,7 +22,8 @@ const Loader = () => {
   };
 
   return (
-    <div className='h-screen flex flex-col items-center justify-center overflow-hidden bg-cyan-800'>
+    <div
+      className={`${height} flex flex-col items-center justify-center overflow-hidden bg-cyan-800`}>
       <Lottie className='size-64' animationData={sailingYacht} />
       <div className='flex items-baseline gap-2 font-lost-fish'>
         <p className='text-white font-bold text-3xl'>Loading</p>

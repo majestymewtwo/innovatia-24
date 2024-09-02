@@ -85,15 +85,7 @@ function App() {
     },
   ]);
 
-  return (
-    <>
-      {loading ? (
-        <Loader />
-      ) : (
-        <RouterProvider className='select-none' router={router} />
-      )}
-    </>
-  );
+  return <RouterProvider className='select-none' router={router} />;
 }
 
 export default App;

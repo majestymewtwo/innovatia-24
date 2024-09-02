@@ -1,4 +1,4 @@
-import React, { useRef, useMemo, useEffect } from "react";
+import React, { useRef, useMemo, useEffect, useState } from "react";
 import {
   extend,
   useThree,
@@ -11,6 +11,7 @@ import { Water } from "three/examples/jsm/objects/Water.js";
 import { OrbitControls, Sky, Text } from "@react-three/drei";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js"; // Import GLTFLoader
 import { FontLoader, TextGeometry } from "three/examples/jsm/Addons.js";
+import Loader from "@/pages/Loader";
 
 extend({ Water });
 
@@ -105,31 +106,28 @@ const CustomText = ({ children, ...props }) => {
   );
 };
 
-const ShipModel = () => {
-  const gltf = useLoader(
-    GLTFLoader,
-    "/pirate_ship_rigged/scene.gltf"
-  );
+const ShipModel = ({ setLoading }) => {
+  const gltf = useLoader(GLTFLoader, "/pirate_ship_rigged/scene.gltf");
+  
+  useEffect(() => {
+    if (gltf) {
+      setLoading();
+      console.log("Model loaded");
+    }
+  }, [gltf]);
+
   return (
     <primitive object={gltf.scene} position={[0, 0, -40]} scale={[4, 4, 4]} />
   );
 };
 
-const OctopusModel = () => {
-  const gltf = useLoader(
-    GLTFLoader,
-    "../src/assets/greedy_octopuss_treasure_chest/scene.gltf"
-  );
-
-  return (
-    <primitive object={gltf.scene} position={[10, 3, 20]} scale={[4, 4, 4]} />
-  );
-};
-
 const OceanScene = () => {
+  const [loading, setLoading] = useState(true);
   const minY = 15;
+
   return (
     <div className='absolute w-screen h-screen z-0'>
+      {loading && <Loader height='h-screen' />}
       <Canvas camera={{ position: [30, 30, 100], fov: 55 }}>
         <Sky
           distance={450000}
@@ -140,7 +138,7 @@ const OceanScene = () => {
           sunPosition={[100, 10, 100]} // Sun position adjusted
         />
         <ambientLight position={[1, 30, 1]} intensity={10} />
-        <ShipModel />
+        <ShipModel setLoading={() => setLoading(false)} />
         <Ocean />
         <OrbitControls
           maxPolarAngle={Math.PI * 0.495}
