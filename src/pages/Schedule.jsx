@@ -5,7 +5,7 @@ import { EventTimeline } from "@/components/Timeline";
 
 const Schedule = () => {
   return (
-    <div className='z-10 text-white p-4 lg:w-2/3 mx-auto'>
+    <div className='z-10 text-white p-4 lg:w-2/3 mx-auto space-y-4'>
       <div className='flex items-center gap-4'>
         <Link to='/welcome'>
           <img
@@ -18,6 +18,9 @@ const Schedule = () => {
           Event Schedule & Venues
         </h1>
       </div>
+      <h1 className='text-xl font-bold drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
+        Note : This is a tentative schedule and will be subject to changes
+      </h1>
       <div className='flex items-center justify-center'>
         <EventTimeline />
       </div>

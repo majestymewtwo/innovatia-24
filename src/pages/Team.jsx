@@ -1,107 +1,29 @@
 import React, { useState } from "react";
 import backButton from "/back-button.png";
 import { Link } from "react-router-dom";
+import { Github, Instagram, Linkedin } from "lucide-react";
 
 const Team = () => {
   const staff = [
     {
-      name: "Person 1",
-      designation: "Professor",
-      image: "/person.png",
+      name: "Dr Nithya M",
+      designation: "Head of the Department",
+      image: "/team/nithya.jpeg",
     },
     {
-      name: "Person 2",
-      designation: "Professor",
-      image: "/person.png",
-    },
-    {
-      name: "Person 3",
-      designation: "Professor",
-      image: "/person.png",
-    },
-    {
-      name: "Person 4",
-      designation: "Professor",
-      image: "/person.png",
-    },
-    {
-      name: "Person 5",
-      designation: "Professor",
-      image: "/person.png",
-    },
-    {
-      name: "Person 6",
-      designation: "Professor",
-      image: "/person.png",
-    },
+      name: "Shiny A",
+      designation: "Staff Coordinator",
+      image: "/team/shiny.jpg",
+    }
   ];
 
   const webdevs = [
     {
-      name: "Person 1",
-      designation: "Professor",
-      image: "/person.png",
-      github: "https://github.com/",
-      linkedIn: "https://linkedin.com/",
-    },
-  ];
-
-  const officeBearers = [
-    {
-      name: "Person 1",
-      designation: "Professor",
-      image: "/person.png",
-      github: "https://github.com/",
-      linkedIn: "https://linkedin.com/",
-    },
-    {
-      name: "Person 2",
-      designation: "Professor",
-      image: "/person.png",
-      github: "https://github.com/",
-      linkedIn: "https://linkedin.com/",
-    },
-    {
-      name: "Person 3",
-      designation: "Professor",
-      image: "/person.png",
-      github: "https://github.com/",
-      linkedIn: "https://linkedin.com/",
-    },
-    {
-      name: "Person 4",
-      designation: "Professor",
-      image: "/person.png",
-      github: "https://github.com/",
-      linkedIn: "https://linkedin.com/",
-    },
-    {
-      name: "Person 5",
-      designation: "Professor",
-      image: "/person.png",
-      github: "https://github.com/",
-      linkedIn: "https://linkedin.com/",
-    },
-    {
-      name: "Person 6",
-      designation: "Professor",
-      image: "/person.png",
-      github: "https://github.com/",
-      linkedIn: "https://linkedin.com/",
-    },
-    {
-      name: "Person 7",
-      designation: "Professor",
-      image: "/person.png",
-      github: "https://github.com/",
-      linkedIn: "https://linkedin.com/",
-    },
-    {
-      name: "Person 8",
-      designation: "Professor",
-      image: "/person.png",
-      github: "https://github.com/",
-      linkedIn: "https://linkedin.com/",
+      name: "Muthu Aanand SU",
+      designation: "Student - 4th Year",
+      image: "/team/muthu-aanand.jpg",
+      github: "https://github.com/majestymewtwo",
+      linkedIn: "https://www.linkedin.com/in/muthu-aanand-su-b36188218/",
     },
   ];
 
@@ -121,7 +43,7 @@ const Team = () => {
       </div>
       <div className='space-y-6'>
         <h1 className='text-5xl font-lost-fish drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
-          Staff Coordinators
+          Faculty Coordinators
         </h1>
         <div className='grid grid-cols-2 gap-4 lg:grid-cols-3'>
           {staff.map((person, index) => (
@@ -140,23 +62,6 @@ const Team = () => {
         </h1>
         <div className='grid grid-cols-2 gap-4 lg:grid-cols-3'>
           {webdevs.map((person, index) => (
-            <Card
-              key={index}
-              name={person.name}
-              role={person.designation}
-              image={person.image}
-              github={person.github}
-              linkedIn={person.linkedIn}
-            />
-          ))}
-        </div>
-      </div>
-      <div className='space-y-6'>
-        <h1 className='text-5xl font-lost-fish drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
-          Office Bearers
-        </h1>
-        <div className='grid grid-cols-2 gap-4 lg:grid-cols-3'>
-          {officeBearers.map((person, index) => (
             <Card
               key={index}
               name={person.name}
@@ -194,9 +99,21 @@ const Card = ({ name, role, image, github, linkedIn }) => {
       <h1 className='font-black text-3xl drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
         {name}
       </h1>
-      <h1 className='font-bold text-xl font-sandy-toes drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
+      <h1 className='font-bold text-xl font-mono drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
         {role}
       </h1>
+      <div className='social-links flex flex-row gap-2 justify-center'>
+        {github && (
+          <a href={github} target='_blank'>
+            <Github color='#FFFFFF' />
+          </a>
+        )}
+        {linkedIn && (
+          <a href={linkedIn} target='_blank'>
+            <Linkedin color='#FFFFFF' />
+          </a>
+        )}
+      </div>
     </div>
   );
 };
