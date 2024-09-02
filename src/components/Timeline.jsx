@@ -1,46 +1,119 @@
 export function EventTimeline() {
   const offlineAgenda = [
     {
-      time: "9:30 AM",
+      time: "9:30 AM - 10:45 AM",
       title: "Innaugration",
-      venue: "MBA Auditorium",
+      venue: "Beta Hall",
     },
     {
-      time: "9:30 AM",
-      title: "Innaugration",
-      venue: "MBA Auditorium",
+      time: "10:45 AM - 11:00 AM",
+      title: "Break",
     },
     {
-      time: "9:30 AM",
-      title: "Innaugration",
-      venue: "MBA Auditorium",
+      time: "11:00 AM - 12:35 PM",
+      title: "Voyage of Visions - Round 1",
+      venue: "Alpha Hall",
     },
     {
-      time: "9:30 AM",
-      title: "Innaugration",
-      venue: "MBA Auditorium",
+      time: "11:00 AM - 12:35 PM",
+      title: "Devquest - Round 1",
+      venue: "Beta Hall",
     },
     {
-      time: "9:30 AM",
-      title: "Innaugration",
-      venue: "MBA Auditorium",
+      time: "11:00 AM - 12:35 PM",
+      title: "Cryptic Heist - Round 1",
+      venue: "Gamma Hall",
     },
     {
-      time: "9:30 AM",
-      title: "Innaugration",
-      venue: "MBA Auditorium",
+      time: "11:00 AM - 12:35 PM",
+      title: "Craftwaves - Round 1",
+      venue: "Classroom",
+    },
+    {
+      time: "11:00 AM - 12:35 PM",
+      title: "Sictone - Round 1",
+      venue: "Smart Classroom - I",
+    },
+    {
+      time: "11:00 AM - 12:35 PM",
+      title: "M.A.D.D Wars - Round 1",
+      venue: "Smart Classroom - II",
+    },
+    {
+      time: "12:35 PM - 1:25 PM",
+      title: "Lunch Break",
+    },
+    {
+      time: "1:25 PM - 2:45 PM",
+      title: "Voyage of Visions - Round 2",
+      venue: "Alpha Hall",
+    },
+    {
+      time: "1:25 PM - 2:45 PM",
+      title: "Devquest - Round 2",
+      venue: "Beta Hall",
+    },
+    {
+      time: "1:25 PM - 2:45 PM",
+      title: "Cryptic Heist - Round 2",
+      venue: "Gamma Hall",
+    },
+    {
+      time: "1:25 PM - 2:45 PM",
+      title: "Craftwaves - Round 2",
+      venue: "Classroom",
+    },
+    {
+      time: "1:25 PM - 2:45 PM",
+      title: "Sictone - Round 2",
+      venue: "Smart Classroom - I",
+    },
+    {
+      time: "1:25 PM - 2:45 PM",
+      title: "M.A.D.D Wars - Round 2",
+      venue: "Smart Classroom - II",
+    },
+    {
+      time: "2:45 PM - 3:00 PM",
+      title: "Break",
+    },
+    {
+      time: "3:00 PM - 4:00 PM",
+      title: "Valedictory",
+      venue: "Beta Hall",
     },
   ];
+
   const onlineAgenda = [
     {
-      time: "9:30 AM",
-      title: "Innaugration",
-      venue: "MBA Auditorium",
+      time: "09/09/2024",
+      title: "Devquest",
+      venue: "7:00 PM  to 9:00 PM",
     },
     {
-      time: "9:30 AM",
-      title: "Innaugration",
-      venue: "MBA Auditorium",
+      time: "09/09/2024",
+      title: "Cryptic Heist",
+      venue: "7:00 PM  to 9:00 PM",
+    },
+    {
+      time: "09/09/2024",
+      title: "M.A.D.D Wars",
+      venue: "7:00 PM  to 9:00 PM",
+    },
+    {
+      time: "09/09/2024",
+      title: "Sictone",
+      venue: "7:00 PM  to 9:00 PM",
+    },
+    {
+      time: "09/09/2024",
+      title: "Voyage of Visions",
+      venue: "To be posted in group",
+    },
+    {
+      time: "09/09/2024",
+      title: "Craftwaves",
+      venue: "To be posted in group",
     },
   ];
 
