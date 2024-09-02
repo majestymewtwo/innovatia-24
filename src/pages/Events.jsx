@@ -9,19 +9,19 @@ const Events = () => {
     {
       name: "Cryptic Heist",
       key: "cryptic-heist",
-      image: "/placeholder.webp",
+      image: "/events/cryptic-heist-poster.png",
       info: "Dive into a fun and thrilling online adventure where participants act as digital detectives, solving cryptographic puzzles, cracking codes, and uncovering hidden secrets to complete a high-stakes virtual heist.",
     },
     {
       name: "DevQuest",
       key: "dev-quest",
-      image: "/placeholder.webp",
+      image: "/events/devquest-poster.jpg",
       info: "An exhilarating coding competition designed to test your problem-solving skills and algorithmic prowess! Compete with the best and showcase your coding mastery in a thrilling and intellectually stimulating environment.",
     },
     {
       name: "Voyage of Visions",
       key: "voyage-of-visions",
-      image: "/placeholder.webp",
+      image: "/events/voyage-of-visions-poster.jpg",
       info: "Set sail on a voyage of innovation and discovery where participants present groundbreaking ideas across various technologies, exploring the vast depths of knowledge and creativity",
     },
   ];
@@ -30,13 +30,13 @@ const Events = () => {
     {
       name: "CraftWave ",
       key: "craft-wave",
-      image: "/placeholder.webp",
+      image: "/events/craft-wave-poster.png",
       info: "A creative and environmentally-focused competition designed to raise awareness about ocean pollution caused by improper waste disposal. Participants will engage in a series of challenges that combine art, innovation, and sustainability.",
     },
     {
       name: "M.A.D.D Wars",
       key: "madd-wars",
-      image: "/placeholder.webp",
+      image: "/events/madd-wars-poster.jpg",
       info: "an extraordinary celebration of some of the most iconic worlds of adventure, heroism, and magic. Whether you're drawn to epic battles, enchanted lands, or the vibrant universes of beloved characters, this event has something for every fan. ",
     },
     {
@@ -136,7 +136,7 @@ const Events = () => {
 const EventCard = ({ name, pic, info, path }) => {
   return (
     <div className='flex flex-col justify-between p-2 space-y-2'>
-      <img className='h-40 w-full rounded-md' src={pic} alt={name} />
+      <img className='h-52 w-full rounded-md' src={pic} alt={name} />
       <h1 className='text-xl font-black drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]'>
         {name}
       </h1>
