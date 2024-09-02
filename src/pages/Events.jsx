@@ -7,52 +7,46 @@ import Button from "@/components/Button";
 const Events = () => {
   const technicalEvents = [
     {
-      name: "Event 1",
-      key: "event-1",
+      name: "Cryptic Heist",
+      key: "cryptic-heist",
       image: "/placeholder.webp",
-      info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aut eum dolore non maiores reiciendis repudiandae aliquam.",
+      info: "Dive into a fun and thrilling online adventure where participants act as digital detectives, solving cryptographic puzzles, cracking codes, and uncovering hidden secrets to complete a high-stakes virtual heist.",
     },
     {
-      name: "Event 2",
-      key: "event-1",
+      name: "DevQuest",
+      key: "dev-quest",
       image: "/placeholder.webp",
-      info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aut eum dolore non maiores reiciendis repudiandae aliquam.",
+      info: "An exhilarating coding competition designed to test your problem-solving skills and algorithmic prowess! Compete with the best and showcase your coding mastery in a thrilling and intellectually stimulating environment.",
     },
     {
-      name: "Event 3",
-      key: "event-1",
+      name: "Voyage of Visions",
+      key: "voyage-of-visions",
       image: "/placeholder.webp",
-      info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aut eum dolore non maiores reiciendis repudiandae aliquam.",
-    },
-    {
-      name: "Event 4",
-      key: "event-1",
-      image: "/placeholder.webp",
-      info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aut eum dolore non maiores reiciendis repudiandae aliquam.",
+      info: "Set sail on a voyage of innovation and discovery where participants present groundbreaking ideas across various technologies, exploring the vast depths of knowledge and creativity",
     },
   ];
 
   const nonTechnicalEvents = [
     {
-      name: "Event 4",
-      key: "event-1",
+      name: "CraftWave ",
+      key: "craft-wave",
       image: "/placeholder.webp",
-      info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aut eum dolore non maiores reiciendis repudiandae aliquam.",
+      info: "A creative and environmentally-focused competition designed to raise awareness about ocean pollution caused by improper waste disposal. Participants will engage in a series of challenges that combine art, innovation, and sustainability.",
     },
     {
-      name: "Event 5",
-      key: "event-1",
+      name: "M.A.D.D Wars",
+      key: "madd-wars",
       image: "/placeholder.webp",
-      info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aut eum dolore non maiores reiciendis repudiandae aliquam.",
+      info: "an extraordinary celebration of some of the most iconic worlds of adventure, heroism, and magic. Whether you're drawn to epic battles, enchanted lands, or the vibrant universes of beloved characters, this event has something for every fan. ",
     },
     {
-      name: "Event 6",
-      key: "event-1",
+      name: "Sictone",
+      key: "sictone",
       image: "/placeholder.webp",
-      info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aut eum dolore non maiores reiciendis repudiandae aliquam.",
+      info: "An engaging and entertaining a series of rounds that challenge participants' knowledge, listening skills, lyrical memory, and puzzle-solving abilities. The event is designed to test teams in a fun, dynamic environment through cinematic quizzes and puzzle-solving tasks.",
     },
   ];
-  
+
   const workshops = [
     {
       name: "Workshop 1",
@@ -83,22 +77,17 @@ const Events = () => {
         <Tabs.List className='flex'>
           <Tabs.Trigger
             value='technical'
-            className='w-1/3 border-b-2 border-white py-2 font-bold text-lg data-[state="active"]:bg-[#152642]/25'>
+            className='w-1/2 border-b-2 border-white py-2 font-bold text-lg data-[state="active"]:bg-[#152642]/25'>
             Technical
           </Tabs.Trigger>
           <Tabs.Trigger
             value='non-technical'
-            className='w-1/3 border-b-2 border-x-2 border-white py-2 font-bold text-lg data-[state="active"]:bg-[#152642]/25'>
+            className='w-1/2 border-b-2 border-x-2 border-white py-2 font-bold text-lg data-[state="active"]:bg-[#152642]/25'>
             Non-Technical
-          </Tabs.Trigger>
-          <Tabs.Trigger
-            value='workshop'
-            className='w-1/3 border-b-2 border-white py-2 font-bold text-lg data-[state="active"]:bg-[#152642]/25'>
-            Workshop
           </Tabs.Trigger>
         </Tabs.List>
         <Tabs.Content className='p-4' value='technical'>
-          Our Technical Events
+          <h1 className='text-2xl'>Our Technical Events</h1>
           <div className='grid grid-cols-1 gap-5 lg:grid-cols-3 z-10 text-white'>
             {technicalEvents.map((data, index) => (
               <EventCard
@@ -112,7 +101,7 @@ const Events = () => {
           </div>
         </Tabs.Content>
         <Tabs.Content className='p-4' value='non-technical'>
-          Our Non Technical Events
+          <h1 className='text-2xl'>Our Non-Technical Events</h1>
           <div className='grid grid-cols-1 gap-5 lg:grid-cols-3 z-10 text-white'>
             {nonTechnicalEvents.map((data, index) => (
               <EventCard
@@ -146,12 +135,14 @@ const Events = () => {
 
 const EventCard = ({ name, pic, info, path }) => {
   return (
-    <div className='p-2 space-y-2'>
+    <div className='flex flex-col justify-between p-2 space-y-2'>
       <img className='h-40 w-full rounded-md' src={pic} alt={name} />
       <h1 className='text-xl font-black drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]'>
         {name}
       </h1>
-      <p className='drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>{info}</p>
+      <p className='drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)] text-justify'>
+        {info}
+      </p>
       <Button path={`/event/${path}`} />
     </div>
   );
