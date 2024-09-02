@@ -38,6 +38,15 @@ const Details = () => {
         <NavButton path='/schedule' title='Schedule' />
         <NavButton path='/team' title='Team' />
       </div>
+      <div className='space-y-4 text-white text-center'>
+        <h1 className='text-6xl font-beauty-mountain drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
+          Promo Video
+        </h1>
+        <video
+          className='lg:w-1/2 focus:outline-none mx-auto rounded-md'
+          src='/promo.mp4'
+          controls></video>
+      </div>
     </div>
   );
 };
