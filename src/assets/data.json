@@ -5,7 +5,7 @@
     "image": "/events/sictone-poster.jpg",
     "rounds": [
       {
-        "mode": "Online",
+        "mode": "Offline",
         "name": "Sound Savvy",
         "date": "September 09, 2024",
         "time": "1 minute per team",
