@@ -25,9 +25,11 @@ const EventInfo = () => {
       <div className='space-y-4 bg-[#0F1B33]/50 p-4 rounded-md'>
         <div className='flex flex-col lg:flex-row gap-10 items-center'>
           <div className='space-y-4'>
-            <p className='text-xl font-bold drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)] text-justify'>
-              {eventData.info}
-            </p>
+            <p
+              className='text-xl font-bold drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)] text-justify'
+              dangerouslySetInnerHTML={{ __html: eventData.info }}
+              suppressContentEditableWarning
+            />
             <p className='text-xl font-bold drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)] text-justify'>
               Team - {eventData.team}
             </p>
@@ -108,7 +110,9 @@ const EventInfo = () => {
             {eventData.coordinators.map((person, index) => {
               if (person.type === "Student")
                 return (
-                  <div className='flex font-bold items-center gap-4 text-lg'>
+                  <div
+                    key={index}
+                    className='flex font-bold items-center gap-4 text-lg'>
                     <h1>{person.name}</h1>
                     <h1>{person.phone}</h1>
                   </div>
@@ -120,7 +124,7 @@ const EventInfo = () => {
             {eventData.coordinators.map((person, index) => {
               if (person.type === "Staff")
                 return (
-                  <div className='flex font-bold items-center gap-4 text-lg'>
+                  <div key={index} className='flex font-bold items-center gap-4 text-lg'>
                     <h1>{person.name}</h1>
                     <h1>{person.phone}</h1>
                   </div>

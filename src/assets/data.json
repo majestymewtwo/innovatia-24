@@ -1,7 +1,7 @@
 {
   "sictone": {
     "name": "Sictone",
-    "info": "Sictone is an exciting event spread across three challenging and  nteractive rounds. Participants will engage in activities that test their abilities to accurately convey messages, recall and identify lyrics, and solve puzzles under time constraints. This event promises to be a fun-filled experience that will keep participants on their toes as they compete for the top spot.",
+    "info": "Sictone is an exciting event spread across three challenging and  nteractive rounds. Participants will engage in activities that test their abilities to accurately convey messages, recall and identify lyrics, and solve puzzles under time constraints. This event promises to be a fun-filled experience that will keep participants on their toes as they compete for the top spot. <br /> <br /> The first round will be conducted online, via a Gmeet. Based on the Number of registration the Gmeet will be held in 1 or 2 slots where Cinematic Quizzes will be conducted through mentimeter platform. Based on rank up totally 15 to 20 teams will be selected.",
     "image": "/events/sictone-poster.jpg",
     "rounds": [
       {
@@ -31,7 +31,7 @@
     "last-date": "September 7, 2024 (10:00 AM)",
     "form-link": "https://docs.google.com/forms/d/e/1FAIpQLSftEk-yNAwzs8pZv8giLPH8q0OEcX1CqLTYRWxROXGtu3i2ZA/viewform",
     "group-link": "https://chat.whatsapp.com/",
-    "brochure-link": "/events/sictone-poster.jpg",
+    "brochure-link": "/events/sictone-brochure.jpg",
     "coordinators": [
       {
         "name": "Mohammed Rizwan M",
