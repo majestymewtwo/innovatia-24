@@ -59,14 +59,14 @@ const Events = () => {
   return (
     <div className='z-10 text-white p-4 lg:w-2/3 space-y-10 mx-auto'>
       <div className='flex items-center gap-4'>
-        <Link to='/welcome'>
+        <Link to='/welcome' className='w-[20%] lg:w-fit'>
           <img
             src={backButton}
             className='size-10 fill-white drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'
             alt='backButton'
           />
         </Link>
-        <h1 className='text-3xl lg:text-6xl font-beauty-mountain drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
+        <h1 className='text-3xl lg:text-5xl font-beauty-mountain drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
           Technical, Non-Technical Events & Workshops
         </h1>
       </div>
@@ -136,7 +136,12 @@ const Events = () => {
 const EventCard = ({ name, pic, info, path }) => {
   return (
     <div className='flex flex-col justify-between p-2 space-y-2'>
-      <img className='h-52 w-full rounded-md' src={pic} alt={name} />
+      <img
+        loading='lazy'
+        className='h-52 w-full rounded-md'
+        src={pic}
+        alt={name}
+      />
       <h1 className='text-xl font-black drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]'>
         {name}
       </h1>

@@ -45,7 +45,7 @@ const Details = () => {
           Promo Video
         </h1>
         <video
-          className='w-[80%] lg:w-1/2 focus:outline-none mx-auto rounded-md'
+          className='w-[90%] lg:w-1/2 focus:outline-none mx-auto rounded-md'
           src='/promo.mp4'
           controls></video>
       </div>

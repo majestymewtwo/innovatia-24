@@ -144,6 +144,9 @@ export function EventTimeline() {
         <h1 className='font-lost-fish text-5xl drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
           Offline Schedule
         </h1>
+        <h1 className='font-black text-2xl drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
+          September 11, 2024
+        </h1>
         <ol className='py-6 relative w-fit mx-auto border-s-4 border-gray-300 font-bold drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
           {offlineAgenda.map((plan, index) => (
             <li key={index} className='mb-10 ms-4'>
