@@ -5,11 +5,12 @@ import { motion as m } from "framer-motion";
 import CountdownTimer from "@/components/Countdown";
 import { Link } from "react-router-dom";
 import NavButton from "@/components/NavButton";
+import Donation from "@/components/Donation";
 
 const Details = () => {
   return (
     <>
-      <div className='z-10 flex flex-col space-y-6 items-center py-6 px-12 lg:py-10 w-full lg:overflow-y-scroll'>
+      <div className='z-10 flex flex-col space-y-6 items-center py-6 px-12 lg:py-10 w-full lg:overflow-y-scroll poppins-regular'>
         <div className='text-white text-center space-y-2'>
           <h3 className='text-2xl lg:gap-2 flex flex-col lg:flex-row font-black drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]'>
             <span>Department of</span>
@@ -49,6 +50,7 @@ const Details = () => {
           src='/promo.mp4'
           controls></video>
       </div>
+      <Donation />
     </>
   );
 };
